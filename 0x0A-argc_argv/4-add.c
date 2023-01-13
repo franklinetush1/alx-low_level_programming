@@ -8,7 +8,6 @@
  * @argv: array pointing to arguments
  * Return: 0
  */
-
 int main(int argc, char *argv[])
 {
 	int a, total = 0;
