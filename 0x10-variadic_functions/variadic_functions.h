@@ -21,6 +21,12 @@ void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 
+void pr_int(va_list);
 
+void print_char(va_list);
+
+void print_float(va_list);
+
+void print_str(va_list);
 
 #endif
