@@ -16,15 +16,20 @@ int binary_search(int *array, size_t size, int value) {
     int start = 0;
     int end = size - 1;
 
-    while (start <= end) {
+    while (start <= end)
+    {
         int mid = (start + end) / 2;
         print(start, end, array);
 
-        if (array[mid] == value) {
+        if (array[mid] == value)
+        {
             return mid;
-        } else if (array[mid] < value) {
+        } 
+        else if (array[mid] < value)
+        {
             start = mid + 1;
-        } else {
+        } else
+        {
             end = mid - 1;
         }
     }
@@ -41,8 +46,10 @@ int binary_search(int *array, size_t size, int value) {
   * Description: Prints the [sub]array being searched after each change.
   */
 
-void print(int start, int end, int *array){
-    for (int i = start; i <= end; i++){
+void print(int start, int end, int *array)
+{
+    for (int i = start; i <= end; i++)
+    {
             printf("%d", array[i]);
     }
     printf("\n");
