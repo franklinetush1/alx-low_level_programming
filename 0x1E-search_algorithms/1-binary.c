@@ -54,6 +54,7 @@ void print(int start, int end, int *array)
 {
 	int i;
 
+	printf("Searching in array: ");
 	for (i = start; i <= end; i++)
 	{
 		printf("%d", array[i]);
