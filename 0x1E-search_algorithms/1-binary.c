@@ -19,7 +19,7 @@ int binary_search(int *array, size_t size, int value)
 
 	if (array == NULL || size == 0)
 		return (-1);
-	
+
 	while (start <= end)
 	{
 		int mid = (start + end) / 2;
